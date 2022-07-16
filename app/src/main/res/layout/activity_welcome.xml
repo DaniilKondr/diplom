@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:id="@+id/appBarLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <include
+            android:id="@+id/welcome_page_tool_bar"
+            layout="@layout/tool_bar_layout">
+        </include>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/appBarLayout3"
+        android:text="Добро пожаловать в WriteMe"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="329dp"
+        android:layout_height="266dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/welcome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/primary"
+        android:text="ПРИНЯТЬ И ПРОДОЛЖИТЬ"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="Нажмите принять и продолжить, чтобы согласиться с"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_agree"
+        android:layout_centerHorizontal="true"
+        android:text="Правилами пользования и Политикой конфиденциальности"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+</RelativeLayout>
